@@ -195,10 +195,16 @@ header {
 }
 
 .header-bg {
-  position: absolute;
+  width: 40%;
+  height: 100vh;
 
-  right: 0;
-  top: 0;
+  background-image: url("/header-bg.png");
+  background-position: top;
+  background-size: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   z-index: 1;
 }
 
@@ -285,6 +291,7 @@ header {
 
 #features {
   background-color: white;
+  z-index: 20;
 }
 
 .features__row {
