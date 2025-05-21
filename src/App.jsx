@@ -1,22 +1,19 @@
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./components/Landing";
-import Features from "./components/Features";
-import Banner from "./components/Banner";
-import Choose from "./components/Choose";
-import Testimonials from "./components/Testimonials";
-import Download from "./components/Download";
+import VehicleModelsPage from "./pages/VehicleModelsPage";
 function App() {
   return (
     <Router>
       <Nav />
-      <Landing />
-      <Features />
-      <Banner />
-      <Choose />
-      <Testimonials />
-      <Download />
-      <Routes></Routes>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/models" element={<VehicleModelsPage />} />
+      </Routes>
+
+      <Footer />
     </Router>
   );
 }
