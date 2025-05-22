@@ -951,7 +951,7 @@ MODELS PAGE
   backdrop-filter: blur(2px) brightness(80%);
   border-radius: 4px;
   z-index: 10;
-  transition: 200ms ease;
+  transition: all 300ms ease;
   opacity: 0;
   visibility: hidden;
   padding: 0 28px;
@@ -970,8 +970,8 @@ MODELS PAGE
   transform: translate(-50%, -110%);
   max-width: 1280px;
   width: 100%;
-  background-color: #fff;
-  background-image: url(assets/booking-bg.png);
+  background-color: rgba(248, 245, 245, 0.9);
+  background-image: url("assets/booking-bg.png");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -983,7 +983,7 @@ MODELS PAGE
   flex-direction: column;
   gap: 24px;
   position: relative;
-  transition: 300ms;
+  transition: all 300ms ease;
 }
 
 .booking-open .booking__container {
